@@ -79,7 +79,7 @@ app.post('/createOrder', async (req, res) => {
     const { tokenProviderEmail, tokenProviderName, tokenProviderBankDetails, fiatAmountAsked } = req.body;
     try {
         // Save tokenProvider's details in the order schema
-        const currentOrderCount = await getCurrentOrderCountFromContract(); // Replace this with actual function to get order count from contract
+        const currentOrderCount = await getCurrentOrderCountFromContract();
         console.log("Current order count: ", currentOrderCount);
         // Generate orderId based on current order count
         const orderId = Number(currentOrderCount) + 1; // You can adjust this based on your requirements
