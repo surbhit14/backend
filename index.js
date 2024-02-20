@@ -32,17 +32,17 @@ const authHeader = {
     password: process.env.razorpay_password
 };
 
-const adminPrivateKey = process.env.ADMIN_PRIVATE_KEY;
+// const adminPrivateKey = process.env.ADMIN_PRIVATE_KEY;
 
 // const web3 = new Web3('https://avalanche-fuji.infura.io/v3/39b2abffe10e4659a12074ce9a344bae');
 const web3 = new Web3('https://polygon-mumbai.infura.io/v3/39b2abffe10e4659a12074ce9a344bae');
 
 
 // Use the private key to sign transactions
-const adminAccount = web3.eth.accounts.privateKeyToAccount(adminPrivateKey);
-const adminAddress = adminAccount.address;
-console.log(adminAccount)
-console.log(adminAddress)
+// const adminAccount = web3.eth.accounts.privateKeyToAccount(adminPrivateKey);
+// const adminAddress = adminAccount.address;
+// console.log(adminAccount)
+// console.log(adminAddress)
 
 const contractAddress = "0xAE64136B8488675362dDc03203F7567E865f23F8";
 const contractInstance = new web3.eth.Contract(contractABI, contractAddress);
