@@ -35,7 +35,7 @@ const authHeader = {
 // const adminPrivateKey = process.env.ADMIN_PRIVATE_KEY;
 
 // const web3 = new Web3('https://avalanche-fuji.infura.io/v3/39b2abffe10e4659a12074ce9a344bae');
-const web3 = new Web3('https://polygon-mumbai.infura.io/v3/39b2abffe10e4659a12074ce9a344bae');
+const web3 = new Web3('https://rpc-testnet-nodes.shidoscan.com');
 
 
 // Use the private key to sign transactions
@@ -44,7 +44,7 @@ const web3 = new Web3('https://polygon-mumbai.infura.io/v3/39b2abffe10e4659a1207
 // console.log(adminAccount)
 // console.log(adminAddress)
 
-const contractAddress = "0xAE64136B8488675362dDc03203F7567E865f23F8";
+const contractAddress = "0xEf1835957091F7d100b2648B9D6D9a4Bf76EaC2E";
 const contractInstance = new web3.eth.Contract(contractABI, contractAddress);
 
 // Order schema
