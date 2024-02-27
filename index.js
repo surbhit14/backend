@@ -44,7 +44,7 @@ const web3 = new Web3('https://rpc-testnet-nodes.shidoscan.com');
 // console.log(adminAccount)
 // console.log(adminAddress)
 
-const contractAddress = "0xEf1835957091F7d100b2648B9D6D9a4Bf76EaC2E";
+const contractAddress = "0x9A6fD057Ece6c98b2679971bB72474B84E52D399";
 const contractInstance = new web3.eth.Contract(contractABI, contractAddress);
 
 // Order schema
